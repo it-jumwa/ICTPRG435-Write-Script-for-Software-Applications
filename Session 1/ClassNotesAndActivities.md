@@ -195,9 +195,26 @@ You are expected to produce:
 (b) a solution method (algorithm) <br>
 (c) the script <br>
 
+**IPO Chart**
+| Input  | Process                    | Output   |
+| ------ | -------------------------- | -------- |
+| value1 | product = value1 * value2  | product  |
+| value2 | modulus1 = value1 % value2  | modulus1 |
+|        | modulus2 = value2 % value1 | modulus2 |
+
+**Pseudocode**
+ - Receive `value1` from user
+ - Receive `value2` from user
+ - Validate `value1` and `value2` are `integers`
+ - Calculate the product
+ - Calculate `modulus1` and `modulus2`
+ - Output the product, `modulus1` and `modulus2`
+
+**Program:** [CalculateProductAndModulus.py](CalculateProductAndModulus.py)
+
 ### 4) A network client requires you to develop a shell script to accept from 4 
    Windows commands and then to execute each in turn
-You are expected to produce: 
+You are expected to produce: <br>
 (a) an IPO chart <br>
 (b) a solution method (algorithm) <br>
 (c) the script <br>
