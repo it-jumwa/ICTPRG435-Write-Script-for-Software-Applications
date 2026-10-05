@@ -46,6 +46,6 @@ hours = receive_input("Enter your hours worked: ")
 pay = rate * hours
 
 # Output the pay to the user
-print(f"Hourly Rate: {rate}\n"
+print(f"\nHourly Rate: ${rate}\n"
       f"Hours Worked: {hours}\n"
-      f"Calculated Pay: {pay}")
+      f"Calculated Pay: ${pay}")
