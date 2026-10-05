@@ -1,5 +1,7 @@
-### Session 1
-#### Session1 slides.pdf
+# Session 1
+
+---
+## Session1 slides.pdf
 Class Example: <br>
 A user is required to enter 2 decimal numbers into a Python program. 
 The Python program will calculate the multiplication of these 2 numbers and print the 
@@ -31,7 +33,7 @@ Program: [Multiply.py](Multiply.py)
 ---
 
 #### Session1Slides2b.pdf
-Problem Definition:
+Problem Definition: <br>
 Design a Python Script that allows a network engineer to enter their
 rate of pay and hours worked. The script calculates the network
 engineer's pay and prints it to the computer screen.
@@ -44,6 +46,8 @@ pay = hours * rate
 | hours | pay = hours * rate | pay    |
 | rate  |                    |        |
 
+---
+
 **Pseudocode**
 - Get hourly rate
 - Get hours worked
@@ -53,6 +57,8 @@ pay = hours * rate
 - Calculate pay
 - Output/Print calculated pay rate
 
+---
+
 **Variable List**
 
 | Variable | Datatype |
@@ -60,6 +66,8 @@ pay = hours * rate
 | hours    | float    |
 | rate     | float    |
 | pay      | float    |
+
+---
 
 #### Desk Check
 [Network Engineer Hourly Rate:](https://au.seek.com/career-advice/role/network-engineer/salary):
@@ -160,3 +168,36 @@ pay = **Invalid input / calculation cannot be performed**
 ---
 
 Program: [CalculatePay.py](CalculatePay.py)
+
+---
+## Worksheet 1
+### 1) Evaluate each of the following: <br>
+(a) 3 % 5 = 3 <br>
+(b) 6 – 2 = 4 <br>
+(c) 4 * 6  = 24 <br>
+(d) 7 / 3 = 2.3333333333333335 <br>
+(e) 5 / 7 = 0.7142857142857143 <br>
+
+
+### 2) Which command shows us all the processes running in the Windows Operating 
+system?
+
+via cmd: tasklist <br>
+via PowerShell: get-process
+
+<sub>sdwheeler (2025). Get-process (microsoft.PowerShell.Management) - PowerShell. [online] Microsoft.com. Available at: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-7.6 [Accessed 5 Oct. 2026].
+<sub>JasonGerend (2023). Tasklist. [online] learn.microsoft.com. Available at: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tasklist [Accessed 5 Oct. 2026].</sub>
+
+
+### 3) A network client requires you to develop a shell script to allow the user to enter any 2 integer numbers and then print their product and modulus results. 
+You are expected to produce:
+(a) an IPO chart <br>
+(b) a solution method (algorithm) <br>
+(c) the script <br>
+
+### 4) A network client requires you to develop a shell script to accept from 4 
+   Windows commands and then to execute each in turn
+You are expected to produce: 
+(a) an IPO chart <br>
+(b) a solution method (algorithm) <br>
+(c) the script <br>
