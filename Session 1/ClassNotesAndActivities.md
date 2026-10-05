@@ -1,9 +1,8 @@
----
 ### Session 1
 #### Session1 slides.pdf
 Class Example: <br>
-A user is required to enter 2 decimal numbers into a Python program. The Python 
-program will calculate the multiplication of these 2 numbers and print the 
+A user is required to enter 2 decimal numbers into a Python program. 
+The Python program will calculate the multiplication of these 2 numbers and print the 
 result to the computer screen.
 
 result = number1 * number2
@@ -19,7 +18,7 @@ result = number1 * number2
 | number2  | float    |
 | result   | float    |
 
-Program: [multiply.py](Session 1\Multiply.py)
+Program: [Multiply.py](Multiply.py)
 
 ---
 **Program Development Life Cycle** (PDLC) <br>
@@ -160,4 +159,4 @@ pay = **Invalid input / calculation cannot be performed**
 
 ---
 
-Program: 
+Program: [CalculatePay.py](CalculatePay.py)
