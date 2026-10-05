@@ -201,3 +201,42 @@ You are expected to produce:
 (a) an IPO chart <br>
 (b) a solution method (algorithm) <br>
 (c) the script <br>
+
+---
+## Worksheet 2.
+### 1.What do each of the following evaluate to?
+(a) 3 * 2 = 6 <br>
+(b) 6 – 4 = 2 <br>
+(c) 9 % 4 = 1 <br>
+(d) 9 / 2 = 4.5 <br>
+
+### 2. What is wrong with following code?
+```python
+   punt Enter your name:”)
+```
+
+Design and execute a Python program that will allow a user to enter the internet service
+provider (ISP) internet connectivity value kbps (example 512).  
+
+The Python program will then calculate a file's download speed based on the following formula
+
+Download_KBps_speed = ((kbps value * 1000)/8)/1024
+   
+The Python program will finally print the file's download KBps speed to the computer
+   screen.
+
+You are required to produce: 
+
+(a) an IPO chart <br>
+(b) variable list <br>
+(c) solution method <br>
+(d) script
+
+### 3. Write down 2 windows commands
+ - cls
+ - help
+
+### 4. What will this python command print out?
+```python
+print("firstname")
+```
