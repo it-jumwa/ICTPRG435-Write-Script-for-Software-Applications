@@ -1,14 +1,27 @@
-def check_for_float(val):
+def check_for_float(val: str):
+    """
+    Attempts to convert a value to a float
+
+    :param val: The value to convert to a float
+    :return: Returns the value as a float, otherwise None
+    """
     # Attempt to convert the value to a float data type
     try:
         return float(val)
     except ValueError:
         # If the input is NaN, return None
-        print("Not a number")
+        print("Not a number\n")
         return None
 
 
-def check_for_integer(val):
+def check_for_integer(val: float):
+    """
+    Checks whether a numeric value contains a decimal component
+
+    :param val: The numeric value to check
+    :return: Returns the value as an integer if it is a whole number, otherwise
+    returns the value as a float
+    """
     # If the value has decimals, leave the datatype as a float
     # The modulo operator, %, returns the remainder after dividing one value
     # by another
@@ -18,16 +31,28 @@ def check_for_integer(val):
         return int(val)
 
 
-def check_for_positive_value(val):
+def check_for_positive_value(val: int or float):
+    """
+    Checks whether a value is greater than 0
+
+    :param val: The numeric value to check
+    :return: Returns the value if it is greater than 0, otherwise returns None
+    """
     # If a value is negative return None
-    if val >= 0:
+    if val > 0:
         return val
     else:
-        print("Input is negative :(")
+        print("Input is negative or equal to 0\n")
         return None
 
 
 def validate_input():
+    """
+    Prompts the user to enter a valid numeric value
+
+    :return: Returns the entered value as an integer if it is a whole number
+    or as a float if it contains a decimal component
+    """
     while True:
         val = input("Enter a number: ")
         val = check_for_float(val)

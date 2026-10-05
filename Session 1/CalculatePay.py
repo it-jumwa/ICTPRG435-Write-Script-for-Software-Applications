@@ -15,9 +15,11 @@ os.system("cls")
 
 def receive_input(prompt: str):
     """
+    Prompts the user for an input using a provided message.
+    The input is validated, checking that it is a positive numeric value
 
-    :param prompt:
-    :return:
+    :param prompt: The message to display when prompting the user for an input
+    :return: The validated positive numeric value
     """
     while True:
         # Receive an input from the user, using a given prompt
@@ -28,8 +30,10 @@ def receive_input(prompt: str):
         # If the value is a float, check if it is a positive value
         if isinstance(val, float):
             val = utils.check_for_positive_value(val)
-            if val is not None:
-                return val
+        # If the value is not a NoneType, return the value
+        if val is not None:
+            return val
+        # Otherwise, iterate again
 
 
 # Prompt the user to input an hourly rate
