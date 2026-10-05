@@ -13,10 +13,10 @@ import utils
 os.system("cls")
 
 
-def receive_input(prompt: str):
+def receive_positive_float_input(prompt: str):
     """
     Prompts the user for an input using a provided message.
-    The input is validated, checking that it is a positive numeric value
+    The input is validated, checking that it is a positive float value
 
     :param prompt: The message to display when prompting the user for an input
     :return: The validated positive numeric value
@@ -37,10 +37,10 @@ def receive_input(prompt: str):
 
 
 # Prompt the user to input an hourly rate
-rate = receive_input("Enter your hourly rate: ")
+rate = receive_positive_float_input("Enter your hourly rate: ")
 
 # Prompt the user to input hours worked
-hours = receive_input("Enter your hours worked: ")
+hours = receive_positive_float_input("Enter your hours worked: ")
 
 # Calculate the pay
 pay = rate * hours
