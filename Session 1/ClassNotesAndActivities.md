@@ -48,6 +48,9 @@ pay = hours * rate
 **Pseudocode**
 - Get hourly rate
 - Get hours worked
+- Check if `hours` and `rate` are:
+  - `float` values
+  - Greater than 0
 - Calculate pay
 - Output/Print calculated pay rate
 
