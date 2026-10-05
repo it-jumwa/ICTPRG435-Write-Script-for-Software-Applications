@@ -25,7 +25,7 @@ def receive_input(prompt: str):
         # Check if the input is a float value
         val = utils.check_for_float(val)
 
-        # If the value is a float, check if it is a negative value
+        # If the value is a float, check if it is a positive value
         if isinstance(val, float):
             val = utils.check_for_positive_value(val)
             if val is not None:
