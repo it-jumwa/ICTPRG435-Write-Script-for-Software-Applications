@@ -18,6 +18,15 @@ def check_for_integer(val):
         return int(val)
 
 
+def check_for_positive_value(val):
+    # If a value is negative return None
+    if val >= 0:
+        return val
+    else:
+        print("Input is negative :(")
+        return None
+
+
 def validate_input():
     while True:
         val = input("Enter a number: ")
