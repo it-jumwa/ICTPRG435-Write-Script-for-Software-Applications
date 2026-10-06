@@ -1,4 +1,4 @@
-def check_for_float(val: str):
+def check_for_float(val):
     """
     Attempts to convert a value to a float
 
@@ -14,7 +14,7 @@ def check_for_float(val: str):
         return None
 
 
-def check_for_integer(val: float):
+def check_for_integer(val):
     """
     Checks whether a numeric value contains a decimal component
 
@@ -25,10 +25,13 @@ def check_for_integer(val: float):
     # If the value has decimals, leave the datatype as a float
     # The modulo operator, %, returns the remainder after dividing one value
     # by another
-    if (val % 1) > 0:
-        return val
-    else:
-        return int(val)
+    try:
+        if (val % 1) > 0:
+            return val
+        else:
+            return int(val)
+    except ValueError:
+        return None
 
 
 def check_for_positive_value(val: int or float):
