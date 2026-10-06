@@ -196,6 +196,7 @@ You are expected to produce:
 (c) the script <br>
 
 **IPO Chart**
+
 | Input  | Process                    | Output   |
 | ------ | -------------------------- | -------- |
 | value1 | product = value1 * value2  | product  |
