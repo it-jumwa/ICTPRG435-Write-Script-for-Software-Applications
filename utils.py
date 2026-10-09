@@ -26,8 +26,8 @@ def check_for_integer(val):
     # The modulo operator, %, returns the remainder after dividing one value
     # by another
     try:
-        if (val % 1) > 0:
-            return val
+        if (val % 1) != 0:
+            return float(val)
         else:
             return int(val)
     except ValueError:
