@@ -17,7 +17,12 @@ def receive_integer_value():
         val = input("Enter a value: ")
 
         try:
-            return int(val)
+            val = int(val)
+            if val == 0:
+                print("Value must not be equal to 0\n")
+                continue
+            else:
+                return val
         except ValueError:
             print("Not a Number\n")
 
@@ -26,7 +31,6 @@ value1 = receive_integer_value()
 value2 = receive_integer_value()
 
 product = value1 * value2
-# TODO: Add error handling for ZeroDivisionError
 modulo1 = value1 % value2
 modulo2 = value2 % value1
 
