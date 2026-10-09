@@ -3,7 +3,7 @@
 ---
 ## Session1 slides.pdf
 Class Example: <br>
-A user is required to enter 2 decimal numbers into a Python program. 
+A user is required to enter 2 decimal numbers into a Python program. <br>
 The Python program will calculate the multiplication of these 2 numbers and print the 
 result to the computer screen.
 
@@ -35,8 +35,9 @@ Program: [Multiply.py](Multiply.py)
 #### Session1Slides2b.pdf
 Problem Definition: <br>
 Design a Python Script that allows a network engineer to enter their
-rate of pay and hours worked. The script calculates the network
-engineer's pay and prints it to the computer screen.
+rate of pay and hours worked. <br>
+The script calculates the network engineer's pay and prints it to the computer 
+screen.
 pay = hours * rate
 
 **IPO Chart**
@@ -55,7 +56,7 @@ pay = hours * rate
   - `float` values
   - Greater than 0
 - Calculate pay
-- Output/Print calculated pay rate
+- Display calculated pay rate
 
 ---
 
@@ -179,8 +180,7 @@ Program: [CalculatePay.py](CalculatePay.py)
 (e) 5 / 7 = 0.7142857142857143 <br>
 
 
-### 2) Which command shows us all the processes running in the Windows Operating 
-system?
+### 2) Which command shows us all the processes running in the Windows Operating system?
 
 via cmd: tasklist <br>
 via PowerShell: get-process
@@ -190,7 +190,7 @@ via PowerShell: get-process
 
 
 ### 3) A network client requires you to develop a shell script to allow the user to enter any 2 integer numbers and then print their product and modulus results. 
-You are expected to produce:
+You are expected to produce: <br>
 (a) an IPO chart <br>
 (b) a solution method (algorithm) <br>
 (c) the script <br>
@@ -198,9 +198,9 @@ You are expected to produce:
 **IPO Chart**
 
 | Input  | Process                    | Output   |
-| ------ | -------------------------- | -------- |
+|--------|----------------------------|----------|
 | value1 | product = value1 * value2  | product  |
-| value2 | modulus1 = value1 % value2  | modulus1 |
+| value2 | modulus1 = value1 % value2 | modulus1 |
 |        | modulus2 = value2 % value1 | modulus2 |
 
 **Pseudocode**
