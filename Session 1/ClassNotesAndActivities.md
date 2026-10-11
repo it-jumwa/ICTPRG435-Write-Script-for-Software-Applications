@@ -20,7 +20,9 @@ result = number1 * number2
 | number2  | float    |
 | result   | float    |
 
-Program: [Multiply.py](Multiply.py)
+Program: 
+ - [Multiply.py](Multiply.py)
+ - [Tkinter version](MultiplyTkinter.py)
 
 ---
 **Program Development Life Cycle** (PDLC) <br>
