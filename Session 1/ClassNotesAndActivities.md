@@ -314,4 +314,4 @@ You are required to produce:
 ```python
 print("firstname")
 ```
-`firstname`
+`firstname`;
