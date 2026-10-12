@@ -215,7 +215,9 @@ You are expected to produce: <br>
  - Calculate `modulus1` and `modulus2`
  - Output the product, `modulus1` and `modulus2`
 
-**Program:** [CalculateProductAndModulus.py](CalculateProductAndModulus.py)
+**Program:** 
+ - [CalculateProductAndModulus.py](CalculateProductAndModulus.py)
+ - [CalculateProductAndModulusTkinter.py](CalculateProductAndModulusTkinter.py)
 
 ### 4) A network client requires you to develop a shell script to accept from 4 
    Windows commands and then to execute each in turn
