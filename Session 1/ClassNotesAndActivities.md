@@ -304,7 +304,7 @@ You are required to produce:
  - Store the final KBps value
  - Display KBps value
 
-**Program: ** [DownloadSpeedCalculator.py](DownloadSpeedCalculator.py) 
+**Program:** [DownloadSpeedCalculator.py](DownloadSpeedCalculator.py) 
 
 ### 4. Write down 2 windows commands
  - cls
@@ -314,3 +314,4 @@ You are required to produce:
 ```python
 print("firstname")
 ```
+`firstname`
