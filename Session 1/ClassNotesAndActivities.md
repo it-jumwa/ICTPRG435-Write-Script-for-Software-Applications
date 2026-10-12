@@ -259,8 +259,13 @@ You are expected to produce: <br>
    punt Enter your name:”)
 ```
 
-Design and execute a Python program that will allow a user to enter the internet service
-provider (ISP) internet connectivity value kbps (example 512).  
+The syntax should be written as:
+```python
+input("Enter your name: ")
+```
+
+### 3. Design and execute a Python program that...
+will allow a user to enter the internet service provider (ISP) internet connectivity value kbps (example 512).  
 
 The Python program will then calculate a file's download speed based on the following formula
 
@@ -276,11 +281,36 @@ You are required to produce:
 (c) solution method <br>
 (d) script
 
-### 3. Write down 2 windows commands
+**IPO Chart**
+
+| Input             | Process                                                | Output                 |  
+|-------------------|--------------------------------------------------------|------------------------|  
+| ISP speed in kbps | Convert ISP speed from kbps to bits (multiply by 1000) | Download speed in KBps |  
+|                   | Convert bits to bytes (divide by 8)                    |                        |  
+|                   | Convert bytes to kilobytes (divide by 1024)            |                        |
+|                   | Store the final KBps value                             |                        |
+
+**Variable List**
+
+| Variable  | Datatype |  
+|-----------|----------|  
+| ISP speed | float    |
+
+**Pseudocode**
+ - Receive ISP speed from user (assuming kbps)
+ - Convert from kbps to bits, multiplying value by 1000
+ - Convert from bits to bytes, dividing by 8
+ - Convert from bytes to kilobytes, dividing by 1024
+ - Store the final KBps value
+ - Display KBps value
+
+**Program: ** [DownloadSpeedCalculator.py](DownloadSpeedCalculator.py) 
+
+### 4. Write down 2 windows commands
  - cls
  - help
 
-### 4. What will this python command print out?
+### 5. What will this python command print out?
 ```python
 print("firstname")
 ```
