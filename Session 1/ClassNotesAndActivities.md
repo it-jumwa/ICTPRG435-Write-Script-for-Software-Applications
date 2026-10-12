@@ -219,12 +219,32 @@ You are expected to produce: <br>
  - [CalculateProductAndModulus.py](CalculateProductAndModulus.py)
  - [CalculateProductAndModulusTkinter.py](CalculateProductAndModulusTkinter.py)
 
-### 4) A network client requires you to develop a shell script to accept from 4 
-   Windows commands and then to execute each in turn
+### 4) A network client requires you to develop a shell script to accept from 4 Windows commands and then to execute each in turn
 You are expected to produce: <br>
 (a) an IPO chart <br>
 (b) a solution method (algorithm) <br>
 (c) the script <br>
+
+**IPO Chart**
+
+| Input                     | Process                | Output                                          |  
+|---------------------------|------------------------|-------------------------------------------------|  
+| 4 Windows Command strings | Execute commands       | Text area displaying the output of each command |  
+|                           | Capture output         | Error message if a command fails                |  
+|                           | Display results in GUI |                                                 |
+
+**Pseudocode**
+ - Receive 4 Windows Commands from user
+ - Run Windows Commands
+ - For each command
+   - If empty
+     - Show error
+     - Run next command
+   - Execute command
+   - Record output
+   - Display output to GUI
+
+**Program:** [ExecuteWindowsCommands.py](ExecuteWindowsCommands.py)
 
 ---
 ## Worksheet 2.
