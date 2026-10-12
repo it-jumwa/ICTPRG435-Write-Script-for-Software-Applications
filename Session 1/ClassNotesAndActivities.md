@@ -170,7 +170,9 @@ pay = **Invalid input / calculation cannot be performed**
 
 ---
 
-Program: [CalculatePay.py](CalculatePay.py)
+Program: 
+ - [CalculatePay.py](CalculatePay.py)
+ - [Tkinter version](CalculatePayTkinter.py)
 
 ---
 ## Worksheet 1
