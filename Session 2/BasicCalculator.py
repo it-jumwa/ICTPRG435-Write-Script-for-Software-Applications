@@ -1,7 +1,7 @@
 """
 Name: Jaimee Molina
 ID: 202514907
-Date Created: xx-xx-2026
+Date Created: 13-10-2026
 
 A calculator that can receives two values and can perform basic functions such
 as add, subtract, multiplication and division. Inputs are accepted via tkinter
@@ -9,36 +9,48 @@ GUI. The result is also displayed to the GUI
 """
 from tkinter import *
 
-"""
-Pseudocode
-
-Start Program
- - Receive first value
- - Receive second value
- - If `Add` button is clicked
-   - Sum the two values together
- - If the `Subtract` button is clicked
-   - Subtract the second value from the first value
-   - Display the result
- - If the `Multiply` button is clicked
-   - Multiply both values together
-   - Display the result
- - If the `Division` button is clicked
-   - Divide the first value by the second value
-   - Display the result
- - If the `Clear` button is clicked
-   - Clear the entry boxes
-   - Reset the result label
- - If the `Exit` button is clicked
-   - Exit the application
-End Program
-"""
-# TODO: Remove pseudocode
+# TODO: Add input validation
 
 
-def calculate():
-# TODO: Add back-end calculation
-    return
+def get_first_value():
+    return float(first_value_entry.get())
+
+
+def get_second_value():
+    return float(second_value_entry.get())
+
+
+def add():
+    val1 = get_first_value()
+    val2 = get_second_value()
+    sum = val1 + val2
+    add_result.config(text=f"Sum: {sum}")
+    add_result.pack()
+    return sum
+
+
+def subtract():
+    val1 = get_first_value()
+    val2 = get_second_value()
+    subtraction = val1 - val2
+    subtract_result.config(text=f"Subtraction: {subtraction}")
+    return subtraction
+
+
+def multiply():
+    val1 = get_first_value()
+    val2 = get_second_value()
+    product = val1 * val2
+    product_result.config(text=f"Product: {product}")
+    return product
+
+
+def divide():
+    val1 = get_first_value()
+    val2 = get_second_value()
+    division = val1 / val2
+    division_result.config(text=f"Division: {division}")
+    return division
 
 
 def clear():
@@ -46,8 +58,12 @@ def clear():
     Resets the result label text and clears the entry widgets
     :return: None
     """
-    result.config(text="The product is: ")
-    val1_entry.delete(0, "end")
+    first_value_entry.delete(0, "end")
+    second_value_entry.delete(0, "end")
+    add_result.config(text="Sum: ")
+    subtract_result.config(text="Subtraction: ")
+    product_result.config(text="Product: ")
+    division_result.config(text="Division: ")
 
 
 def exit_button():
@@ -58,66 +74,59 @@ def exit_button():
     window.destroy()
 
 
-def input_validation(val: str):
-    # TODO: Add input validation
-    return
-
-
-"""Initialise the application"""
+"""Initialise Application"""
 
 # Creates the main application window
 window = Tk()
 
 # Adds a title to the application window
-window.title("App Window Title")
-# TODO: Add app window title
+window.title("Basic Calculator")
 
 # Sets the size of the application window
 window.geometry("360x360")
-# TODO: Scale window appropriately
 
-# Blank Error Label
-error = Label(text="Error: ...")
 
 """Value 1"""
-
-# Creates a text label
-val1_label = Label(window, text="Enter first value: ")
-# Adds the label to the application window
-val1_label.pack()
-
-# Creates an entry widget that accepts a single-line of text input from
-# the user
-val1_entry = Entry(window)
-# Adds the entry widget to the application window
-val1_entry.pack()
+first_value_label = Label(window, text="First Number: ")
+first_value_label.pack()
+first_value_entry = Entry(window)
+first_value_entry.pack()
 
 """Value 2"""
+second_value_label = Label(window, text="Second Number: ")
+second_value_label.pack()
+second_value_entry = Entry(window)
+second_value_entry.pack()
 
-# Creates a text label
-val2_label = Label(window, text="Enter second value: ")
-# Adds the label to the application window
-val2_label.pack()
+"""Add Result"""
+add_result = Label(window, text="Sum: ")
+add_result.pack()
 
-# Creates an entry widget that accepts a single-line of text input from
-# the user
-val2_entry = Entry(window)
-# Adds the entry widget to the application window
-val2_entry.pack()
+"""Subtraction Result"""
+subtract_result = Label(window, text="Subtraction: ")
+subtract_result.pack()
 
-"""Result"""
+"""Product Result"""
+product_result = Label(window, text="Product: ")
+product_result.pack()
 
-# Creates a label widget
-result = Label(window, text="The result is: ")
-# Adds the label widget to the application window
-result.pack()
+"""Division Result"""
+division_result = Label(window, text="Division: ")
+division_result.pack()
 
 """Buttons"""
 
-# Creates a button widget, for calculating the product
-calculate_button = Button(window, text="Calculate", command=calculate)
-# Adds the button widget to the application window
-calculate_button.pack()
+add_button = Button(window, text="Add", command=add)
+add_button.pack()
+
+subtract_button = Button(window, text="Subtract", command=subtract)
+subtract_button.pack()
+
+multiply_button = Button(window, text="Multiply", command=multiply)
+multiply_button.pack()
+
+divide_button = Button(window, text="Divide", command=divide)
+divide_button.pack()
 
 # Creates a button widget for
 clear_button = Button(window, text="Clear", command=clear)
@@ -128,5 +137,9 @@ exit_button = Button(window, text="Exit", command=exit_button)
 # Adds the button widget to the application window
 exit_button.pack()
 
-# Starts the event loop, keeping the window responsive
+
+# Blank Error Label
+error = Label(text="Error: ...")
+
+# Starts the event loop, keeping the app responsive
 window.mainloop()
