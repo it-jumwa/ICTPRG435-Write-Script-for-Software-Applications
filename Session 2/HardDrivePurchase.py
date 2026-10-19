@@ -13,13 +13,44 @@ from tkinter import *
 
 
 def calculate():
-    hard_drive_num = int(hard_drive_num_entry.get())
-    cost = float(cost_entry.get())
+    hard_drive_num = validate_hard_drive_num()
+    cost = validate_cost()
+
+    if hard_drive_num is None:
+        return
+    elif cost is None:
+        return
+
+    num_error.pack_forget()
+    cost_error.pack_forget()
+
     purchase_cost = hard_drive_num * cost
     customer = customer_entry.get()
-    result.config(text=f"Customer: {customer}\nThe purchase cost is:"
-                       f" {purchase_cost}")
+    result.config(text=f"Customer: {customer.upper()}\nThe purchase cost is:"
+                       f" ${purchase_cost}")
     return purchase_cost
+
+
+def validate_hard_drive_num():
+    num = hard_drive_num_entry.get()
+    try:
+        num = int(num)
+        return num
+    except ValueError:
+        num_error.config(text="Number of hard drives is NaN")
+        num_error.pack()
+        return None
+
+
+def validate_cost():
+    cost = cost_entry.get()
+    try:
+        cost = float(cost)
+        return cost
+    except ValueError:
+        cost_error.config(text="Cost of hard drives is NaN")
+        cost_error.pack()
+        return None
 
 
 def clear():
@@ -52,8 +83,9 @@ window.title("HardDrive Purchase")
 # Sets the size of the application window
 window.geometry("360x360")
 
-# Blank Error Label
-error = Label(text="Error: ...")
+# Blank Error Labels
+num_error = Label(text="Error: ...")
+cost_error = Label(text="Error: ...")
 
 """Customer Name"""
 
@@ -75,7 +107,6 @@ cost_label = Label(window, text="Enter hard drive cost", padx=10, pady=10)
 cost_label.pack()
 cost_entry = Entry(window)
 cost_entry.pack()
-
 
 """Result"""
 
